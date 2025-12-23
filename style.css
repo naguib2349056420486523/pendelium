@@ -1,0 +1,125 @@
+:root{
+    --color-1: #121212;
+    --color-2: #1e1e1e;
+    --color-3: #ffffff; 
+    --color-4: #a0a0a0;
+    --color-5: #00d9f9; 
+    --color-6: #00ff88; 
+    --color-7: #ff5e00;
+    --color-8: #333333; 
+
+}
+ body {
+    margin: 0;
+    overflow: hidden;
+    background-color: var(--color-1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+ }
+
+ .sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: var(--color-2);
+    border-right: 1px solid var(--color-8);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    gap: 25px;
+    overflow-y: auto;
+    z-index: 10;
+    box-shadow: 5px 0 20px rgba(0,0,0,0.5);
+ }
+
+ h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-5);
+    text-align: center;
+    border-bottom: 1px solid var(--color-8);
+    padding-bottom: 15px;
+
+ }
+ .control-group {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .divider {
+    border-top: 1px solid var(--color-8);
+    margin: 10px 0;
+
+ }
+
+ .footer-text {
+    margin-top: auto;
+    font-size: 0.8rem;
+    color: #555;
+    text-align: center;
+
+ }
+
+ label{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    color: var(--color-4);
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+
+ }
+
+ .val-text {
+    color: var(--color-3);
+    font-family: monospace;
+
+ }
+
+ input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: var(--color-8);
+    border-radius: 3px;
+    outline: none;
+
+
+ }
+
+ input[type=range]::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   width: 18px;
+   height: 18px;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: 0.2s;
+   background: white;
+ } 
+
+ #lengthSlider::-webkit-slider-thumb,
+ #gravitySlider::-webkit-slider-thumb { background: var(--color-5);}
+ 
+#massSlider::-webkit-slider-thumb {
+   background: var(--color-7);
+   width: 22px; height: 22px;
+}
+
+button {
+   margin-top: 10px;
+   padding: 15px;
+   background: linear-gradient(45deg, var(--color-7), #ff0055);
+   color: white;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   font-weight: bold;
+   font-size: 1
+}
+
+
+ 
